@@ -10,7 +10,7 @@
     * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      box-sizing: border-box;;
     }
 
     body {
@@ -378,7 +378,7 @@
           <img src="img/delivery.avif" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;" alt="Delivery">
           <div class="card-body">
             <h5 class="card-title text-primary">3. Fast Delivery</h5>
-            <p class="card-text">Get the product delivered to your doorstep within 24 hours.</p>
+            <p class="card-text">Hi,Get the product delivered to your doorstep within 24 hours.</p>
           </div>
         </div>
       </div>
