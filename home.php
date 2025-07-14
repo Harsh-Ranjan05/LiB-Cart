@@ -459,6 +459,39 @@
     </div>
   </div>
   </div>
+</div>
+ <div class="step-rent">
+  <div class="step-rent py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold text-primary">Why Rent?</h2>
+    <div class="row g-4">
+
+      <!-- Step 1 & 2 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="img/savemoney.jpg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Register">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Rent More,Save Even More</h5>
+            <p class="card-text">Rent gives you the opportunity to get your desired product at an affordable price to fulfill your needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="img/savetime.jpg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Select Product">
+          <div class="card-body">
+            <h5 class="card-title text-primary">LOW DOWNTIME & INSTANT SERVICE!</h5>
+            <p class="card-text">This renting website also gives you the opportunity to get your desired product within 24 hours without any hassle..</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 & 4 -->
+     
+    </div>
+  </div>
+  </div>
 
 </div>
 
