@@ -231,10 +231,11 @@
     }
      .container{
       background-color: white;
-      padding: 5px;
+      padding: 10px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
       margin-top:5px;
+      border:2px solid #2874F0;
     }
     .inside-container{
      margin:5px;
@@ -254,6 +255,12 @@
       border:none;
       border-radius: 10px;
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+      border:2px solid #FFD700;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .card:hover{
+       transform: translateY(-5px);
     }
     .popular-product{
       display: grid;
@@ -273,11 +280,27 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
       border:2px solid #FFD700;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .product-card:hover{
+       transform: translateY(-5px);
+    }
+    #img-card{
+     transition: transform 0.3s; 
+    }
+    #img-card:hover{
+       transform: translateX(5px);
     }
     #card-img{
       width: 100px;
       height:100px;
       border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    #card-img:hover{
+     transform: translateX(5px);
     }
     .product-heading{
       display:flex;
@@ -417,7 +440,7 @@
       <!-- Step 1 & 2 -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 text-center shadow-sm">
-          <img src="img/register.jpg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Register">
+          <img src="img/register.jpg" id="img-card" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Register">
           <div class="card-body">
             <h5 class="card-title text-primary">1. Register Yourself</h5>
             <p class="card-text">Create your account in a few easy steps and get started.</p>
@@ -427,7 +450,7 @@
 
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 text-center shadow-sm">
-          <img src="img/camera.jpg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Select Product">
+          <img src="img/camera.jpg" id="img-card" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Select Product">
           <div class="card-body">
             <h5 class="card-title text-primary">2. Select Product</h5>
             <p class="card-text">Browse and choose your desired product to rent from our collection.</p>
@@ -438,7 +461,7 @@
       <!-- Step 3 & 4 -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 text-center shadow-sm">
-          <img src="img/delivery.avif" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Delivery">
+          <img src="img/delivery.avif" id="img-card" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Delivery">
           <div class="card-body">
             <h5 class="card-title text-primary">3. Fast Delivery</h5>
             <p class="card-text">Get the product delivered to your doorstep within 24 hours.</p>
@@ -448,7 +471,7 @@
 
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 text-center shadow-sm">
-          <img src="img/money-exchange.avif" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Pay Later">
+          <img src="img/money-exchange.avif" id="img-card" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Pay Later">
           <div class="card-body">
             <h5 class="card-title text-primary">4. Pay After Satisfaction</h5>
             <p class="card-text">Inspect the product upon delivery and pay only if you're satisfied.</p>
@@ -469,7 +492,7 @@
       <!-- Step 1 & 2 -->
       <div class="col-md-6 col-lg-6">
         <div class="card h-100 text-center shadow-sm">
-          <img src="img/savemoney.jpg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Register">
+          <img src="img/savemoney.jpg" id="img-card" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Register">
           <div class="card-body">
             <h5 class="card-title text-primary">Rent More,Save Even More</h5>
             <p class="card-text">Rent gives you the opportunity to get your desired product at an affordable price to fulfill your needs.</p>
@@ -479,7 +502,7 @@
 
       <div class="col-md-6 col-lg-6">
         <div class="card h-100 text-center shadow-sm">
-          <img src="img/savetime.jpg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Select Product">
+          <img src="img/savetime.jpg" id="img-card" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Select Product">
           <div class="card-body">
             <h5 class="card-title text-primary">LOW DOWNTIME & INSTANT SERVICE!</h5>
             <p class="card-text">This renting website also gives you the opportunity to get your desired product within 24 hours without any hassle..</p>
