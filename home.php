@@ -178,7 +178,7 @@
     }
     #img {
       width: 100%;
-      height: 400px;
+      height: auto;
       border-radius: 10px;
       object-fit: cover;
       box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
@@ -241,7 +241,7 @@
     }
     #banner{
       width: 400px;
-      height:400px;
+      height:500px;
       border-radius:100%;
       margin:5px;
     }
@@ -254,6 +254,34 @@
       border:none;
       border-radius: 10px;
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+    }
+    .popular-product{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 5px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      margin:15px;
+    }
+    .product-card{
+      width: 120px;
+      text-align:center;
+      height:150px;
+      margin:1px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      border:2px solid #FFD700;
+    }
+    #card-img{
+      width: 100px;
+      height:100px;
+      border-radius: 10px;
+    }
+    .product-heading{
+      display:flex;
+      justify-content:center;
     }
   </style>
 </head>
@@ -308,6 +336,41 @@
   <div class="banner-section">
     <img src="img/banner.png" alt="Banner" id="img">
   </div>
+  <div class="product-heading">
+      <h2>Our Most Rented Products</h2>
+     </div>
+  <div class="popular-product">
+    <div class="product-card">
+      <img src="img/product-1.jpg" alt="" id="card-img"><b>DSLR Camera</b>
+    </div>
+    <div class="product-card">
+      <img src="img/product-2.jpg" alt="" id="card-img"><b>Projector</b>
+    </div>
+    <div class="product-card">
+      <img src="img/product-3.jpg" alt="" id="card-img"><b>Laptops</b>
+    </div>
+    <div class="product-card">
+      <img src="img/product-4.jpg" alt="" id="card-img"><b>Home Threater</b>
+    </div>
+    <div class="product-card">
+      <img src="img/product-5.jpg" alt="" id="card-img"><b>Lighting Setup</b>
+    </div>
+    <div class="product-card">
+      <img src="img/product-6.jpg" alt="" id="card-img"><b>Boys Dresses</b>
+    </div>
+    <div class="product-card">
+      <img src="img/product-7.jpeg" alt="" id="card-img"><b>Weeding  Wear</b>
+    </div>
+    <div class="product-card">
+      <img src="img/product-8.jpg" alt="" id="card-img"><b>Men Dresses</b>
+    </div>
+    <div class="product-card">
+      <img src="img/product-9.jpg" alt="" id="card-img"><b>Women Dresses</b>
+    </div>
+    <div class="product-card">
+      <img src="img/product-10.jpg" alt="" id="card-img"><b>Girl Dresses</b>
+    </div>
+  </div>
    <div class="top-heading">
       <h2>Select Your City & Duration</h2>
       <div class="sub-heading">
@@ -346,15 +409,15 @@
     <button id="btn">Filter & Rent  Now</button>
   </div>
   <div class="step-rent">
-  <section class="step-rent py-5 bg-light">
+  <div class="step-rent py-5 bg-light">
   <div class="container">
-    <h2 class="text-center mb-5 fw-bold text-primary">How to Rent in 4 Easy Steps</h2>
+    <h2 class="text-center mb-5 fw-bold text-primary">How to Rent in 4 Easy Steps ?</h2>
     <div class="row g-4">
 
       <!-- Step 1 & 2 -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 text-center shadow-sm">
-          <img src="img/register.jpg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;" alt="Register">
+          <img src="img/register.jpg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Register">
           <div class="card-body">
             <h5 class="card-title text-primary">1. Register Yourself</h5>
             <p class="card-text">Create your account in a few easy steps and get started.</p>
@@ -364,7 +427,7 @@
 
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 text-center shadow-sm">
-          <img src="img/camera.jpg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;" alt="Select Product">
+          <img src="img/camera.jpg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Select Product">
           <div class="card-body">
             <h5 class="card-title text-primary">2. Select Product</h5>
             <p class="card-text">Browse and choose your desired product to rent from our collection.</p>
@@ -375,17 +438,17 @@
       <!-- Step 3 & 4 -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 text-center shadow-sm">
-          <img src="img/delivery.avif" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;" alt="Delivery">
+          <img src="img/delivery.avif" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Delivery">
           <div class="card-body">
             <h5 class="card-title text-primary">3. Fast Delivery</h5>
-            <p class="card-text">Hi,Get the product delivered to your doorstep within 24 hours.</p>
+            <p class="card-text">Get the product delivered to your doorstep within 24 hours.</p>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 text-center shadow-sm">
-          <img src="img/money-exchange.avif" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;" alt="Pay Later">
+          <img src="img/money-exchange.avif" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);" alt="Pay Later">
           <div class="card-body">
             <h5 class="card-title text-primary">4. Pay After Satisfaction</h5>
             <p class="card-text">Inspect the product upon delivery and pay only if you're satisfied.</p>
@@ -395,7 +458,7 @@
 
     </div>
   </div>
-</section>
+  </div>
 
 </div>
 
