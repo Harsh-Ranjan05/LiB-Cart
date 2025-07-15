@@ -308,7 +308,7 @@
     }
     #preloader{
       background:white url('img/preloader.gif')no-repeat center center;
-      background-size:20%;
+      background-size:15%;
       height:100vh;
       width: 100%;
       position:fixed;
