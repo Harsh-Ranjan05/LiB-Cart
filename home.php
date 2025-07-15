@@ -306,10 +306,18 @@
       display:flex;
       justify-content:center;
     }
+    #preloader{
+      background:white url('img/preloader.gif')no-repeat center center;
+      background-size:20%;
+      height:100vh;
+      width: 100%;
+      position:fixed;
+      z-index:100;
+    }
   </style>
 </head>
 <body>
-
+ <div id="preloader"></div>
   <nav>
     <div class="logo">
       <div class="logo-icon"></div>
@@ -517,7 +525,12 @@
   </div>
 
 </div>
-
+<script> 
+  let loader = document.getElementById("preloader");
+  window.addEventListener("load",function(){
+    loader.style.display="none";
+  })
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
