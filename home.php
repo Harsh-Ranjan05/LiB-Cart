@@ -314,6 +314,18 @@
       position:fixed;
       z-index:100;
     }
+    footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer ul li {
+  padding: 4px 0;
+  margin: 0;
+}
+
+    
   </style>
 </head>
 <body>
@@ -523,8 +535,46 @@
     </div>
   </div>
   </div>
-
 </div>
+<footer>
+  <div class="footer-sub container_1">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <ul>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <ul>
+          <li>Services</li>
+          <li>Pricing</li>
+          <li>Support</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Disclaimer</li>
+          <li>Policy</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
 <script> 
   let loader = document.getElementById("preloader");
   window.addEventListener("load",function(){
